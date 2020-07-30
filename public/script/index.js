@@ -11,3 +11,21 @@ $("document").ready(function changeText() {
     });
   });
 });
+var lastScrollTop = 0;
+$(window).scroll(function (event) {
+  var st = $(this).scrollTop();
+  if (st > lastScrollTop) {
+    $("nav").fadeOut();
+  } else {
+    $("nav").fadeIn();
+  }
+  lastScrollTop = st;
+});
+// $(".scrollToTop").fadeOut();
+// $(window).scroll(function () {
+//   if ($(this).scrollTop() > 100) {
+//     $(".scrollToTop").fadeIn();
+//   } else {
+//     $(".scrollToTop").fadeOut();
+//   }
+// });

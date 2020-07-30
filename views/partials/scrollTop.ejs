@@ -1,19 +1,29 @@
-<!-- <a href="#" class="scrollToTop"><i class="fas fa-chevron-up" ></a>
+<a href="#" class="scrollToTop"
+  ><img class="scrollTop-img" src="/images/scrolltop.png"
+/></a>
 <script>
-  $(document).ready(function () {
-    //Check to see if the window is top if not then display button
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 100) {
-        $(".scrollToTop").fadeIn();
-      } else {
-        $(".scrollToTop").fadeOut();
-      }
-    });
+  // $(document).ready(function () {
+  //   //Check to see if the window is top if not then display button
+  //   $(window).scroll(function () {
+  //     if ($(this).scrollTop() > 100) {
+  //       $(".scrollToTop").fadeIn();
+  //     } else {
+  //       $(".scrollToTop").fadeOut();
+  //     }
+  //   });
 
-    //Click event to scroll to top
-    $(".scrollToTop").click(function () {
-      $("html, body").animate({ scrollTop: 0 }, 800);
-      return false;
-    });
+  //   //Click event to scroll to top
+  //   $(".scrollToTop").click(function () {
+  //     $("html, body").animate({ scrollTop: 0 }, 800);
+  //     return false;
+  //   });
+  // });
+  $(".scrollToTop").fadeOut();
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $(".scrollToTop").fadeIn();
+    } else {
+      $(".scrollToTop").fadeOut();
+    }
   });
-</script> -->
+</script>
